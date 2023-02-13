@@ -48,12 +48,13 @@ main{
 }
 
 #close-btn{
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 #close-btn{
    cursor: pointer;
-   font-size: 3rem;
+   padding:0px 7px;
+  
    color: #ff0000;
 }
 

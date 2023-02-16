@@ -1,26 +1,26 @@
-body{
+body {
     background: url(../assets/project-5.jpg) no-repeat center center / cover;
 }
 
 
-main{
+main {
     height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#add-task-container{
+#add-task-container {
     width: 350px;
     padding: 20px 10px;
     background-color: #fff;
     border-radius: 20px;
     box-shadow: 0 0 3px;
-
+    margin-bottom: 20px;
     display: flex;
 }
 
-input{
+input {
     flex: 5;
     margin-right: 10px;
     border-radius: 10px;
@@ -28,7 +28,7 @@ input{
     padding: 5px;
 }
 
-#add-task{
+#add-task {
     flex: 1;
     font-size: 1.1rem;
     padding: 5px;
@@ -40,7 +40,60 @@ input{
     border-radius: 10px;
 }
 
-#add-task:hover{
+#add-task:hover {
     background-color: green;
+    color: #fff;
+}
+
+
+/* styling for task which get added to to-do list */
+.task {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 3px;
+
+    padding: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.task li {
+    list-style: none;
+    flex: 4;
+    padding: 5px;
+    font-size: 1.3rem;
+    margin: 10px;
+}
+
+.task button {
+    flex: 1;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.task .checkTask {
+    color: orange;
+    margin-right: 5px;
+    border: solid 2px orange;
+    font-size: 1.5rem;
+}
+
+.task .checkTask:hover {
+    background-color: orange;
+    color: #fff;
+}
+
+.task .deleteTask {
+    color: red;
+    margin-right: 5px;
+    border: solid 2px red;
+    font-size: 1.5rem;
+}
+
+
+.task .deleteTask:hover {
+    background-color: red;
     color: #fff;
 }

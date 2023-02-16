@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dom Manipulation</title>
     <!-- stylesheet  -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/moneyMaster.css">
     <!-- google fonts links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,6 +32,39 @@
             </ul>
         </nav>
     </header>
+
+
+    <main>
+        <h2 class="heading">Money Master</h2>
+        <section>
+            <div class="container">
+                <div class="img">
+                    <img src="../assets/money-master.jpg" alt="">
+                </div>
+                <div class="income">
+                    <h2>Income</h2>
+
+                    <label for="">Income: <input type="text"></label>
+                    <h2>Expenses</h2>
+                    <label for="">Food: <input type="text"></label>
+                    <label for="">Rent: <input type="text"></label>
+                    <label for="">Clothes: <input type="text"></label>
+
+                    <button>Calculate</button>
+
+                    <h2>Total Expense:$ <span>00</span></h2>
+                    <h2>Balance:$ <span>00</span></h2>
+                    <label class="save" for="">Save: <input type="text">%</label>
+                    <button>Save</button>
+                    <h2>Saving Amount:$ <span>00</span></h2>
+                    <h2>Remaining Balance:$ <span>00</span></h2>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="../js/mmaster.js"></script>
 </body>
 
 </html>

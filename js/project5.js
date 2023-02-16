@@ -35,12 +35,13 @@ addTask.addEventListener('click', function(){
 
     inputTask.value ="";
 
+  if(checkButton && deleteButton){
     checkButton.addEventListener('click', function(){
         checkButton.parentElement.style.textDecoration = 'line-through'
     })
 
     deleteButton.addEventListener('click', function(e){
-        let target = e.target;
-        target.parentElement.parentElement.remove();
+        e.target.parentElement.parentElement.remove(e.target);
     })
+  }
 })
